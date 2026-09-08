@@ -168,7 +168,7 @@ Todo vive en `assets/js/conversiones.js`. La única parte editable:
 ```js
 var ETIQUETAS = {
   whatsapp:   'AW-18341185595/plC9CKiHk9kcELuQ4alE',  // Click_Whatsapp — activa
-  llamada:    '',        // pendiente
+  llamada:    'AW-18341185595/R0_vCLmVvvEcELuQ4alE',  // Contacto — activa
   correo:     '',        // pendiente
   formulario: ''         // pendiente
 };
@@ -278,14 +278,17 @@ semanas. Ahí es donde aparecen las negativas que faltan.
 
 ### 7.2 Acciones de conversión
 
-**Ya existe:** `Click_Whatsapp` — `AW-18341185595/plC9CKiHk9kcELuQ4alE`. Ya está
-conectada en el sitio nuevo y funciona.
+**Ya conectadas y funcionando:**
 
-**Crear:**
+| Acción en Ads | Etiqueta | Qué dispara |
+|---|---|---|
+| `Click_Whatsapp` | `AW-18341185595/plC9CKiHk9kcELuQ4alE` | Clic en cualquier enlace de WhatsApp |
+| `Contacto` | `AW-18341185595/R0_vCLmVvvEcELuQ4alE` | Clic en cualquiera de los 7 teléfonos |
+
+**Falta crear:**
 
 | Acción | Categoría sugerida | Recuento | Principal |
 |---|---|---|---|
-| Clic en teléfono | Llamada telefónica | **Una** | Sí |
 | Envío de formulario | Enviar formulario de contacto | **Una** | Sí |
 | Clic en correo | Contacto | Una | No (secundaria) |
 
@@ -463,7 +466,7 @@ sí está en el sitio en producción y en su material gráfico.)
 | 3 | Verificar los seis teléfonos de distribuidores | `index.html`, `nosotros.html`, `contacto.html` |
 | 4 | Confirmar el horario | Los cinco HTML y el JSON-LD |
 | 5 | Decidir cuál propiedad GA4 se queda y borrar la otra | `<head>` de los cinco HTML |
-| 6 | Pegar la etiqueta de la conversión de llamada | `conversiones.js`, línea 33 |
+| 6 | ~~Etiqueta de la conversión de llamada~~ — hecho | `conversiones.js` |
 | 7 | Fotos propias de las sucursales Atlántida e Insurgentes | `assets/img/` |
 | 8 | Publicar el sitio y verificar las etiquetas en producción | — |
 

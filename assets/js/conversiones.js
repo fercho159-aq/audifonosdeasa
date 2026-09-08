@@ -28,9 +28,9 @@
     /* Clic en cualquier botón o enlace de WhatsApp */
     whatsapp: 'AW-18341185595/plC9CKiHk9kcELuQ4alE',
 
-    /* Clic en cualquier teléfono (tel:). Pega aquí la etiqueta cuando
-       crees la acción de conversión de llamada en Google Ads. */
-    llamada: '',
+    /* Clic en cualquiera de los teléfonos del sitio (enlaces tel:).
+       Acción "Contacto" en Google Ads, tipo Clic. */
+    llamada: 'AW-18341185595/R0_vCLmVvvEcELuQ4alE',
 
     /* Clic en el correo electrónico (mailto:) */
     correo: '',
