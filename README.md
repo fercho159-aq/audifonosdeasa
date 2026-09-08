@@ -1,5 +1,10 @@
 # Grupo DEASA Widex — audifonosdeasa.com
 
+> 📄 **¿Retomas el proyecto desde cero, o se lo pasas a otra persona o a una IA?**
+> Empieza por [`CONTEXTO.md`](CONTEXTO.md): historia del proyecto, datos
+> canónicos del negocio, decisiones tomadas y las recomendaciones de Google Ads.
+> Este README cubre solo la parte técnica del sitio.
+
 Sitio estático (HTML + CSS + JS, sin dependencias ni build) con el contenido de
 audifonosdeasa.com y el lenguaje visual de audifonos.com.mx.
 
