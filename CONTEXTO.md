@@ -16,12 +16,22 @@ México. Venden y adaptan audífonos (auxiliares auditivos) de la marca Widex,
 hacen audiometría, moldes a la medida y reparación. Operan desde 1981. También
 tienen una óptica, **Óptica Pánuco**, en la misma dirección de la matriz.
 
-- **Sitio en producción (viejo):** https://audifonosdeasa.com — WordPress 6.6.7
-- **Sitio nuevo (este repo):** https://github.com/fercho159-aq/audifonosdeasa
+- **Sitio en producción:** https://audifonosdeasa.com — este repo, en Vercel
+- **Repositorio:** https://github.com/fercho159-aq/audifonosdeasa
 - **Referencia de diseño:** https://www.audifonos.com.mx — es un sitio de la
   misma marca, más moderno; el cliente pidió que el nuevo se pareciera a ese.
 
-El sitio nuevo **todavía no está publicado**. Está en el repo, listo para subir.
+**Hosting:** Vercel, desplegado automáticamente desde la rama `main` del repo.
+Un push a `main` publica. El dominio apunta al apex (`audifonosdeasa.com`) y
+`www` redirige ahí con un 308.
+
+**DNS:** sigue en Hostinger (`ns1`/`ns2.dns-parking.com`). Solo dos registros
+apuntan a Vercel: `A @ → 216.150.1.1` y `CNAME www → ...vercel-dns-016.com`.
+El correo sigue en Hostinger: **no tocar los MX, el TXT del SPF, los CNAME
+`hostingermail-*._domainkey`, `autodiscover` ni `autoconfig`.**
+
+El WordPress viejo sigue existiendo en el hosting de Hostinger, ya sin dominio
+apuntando a él.
 
 ---
 
