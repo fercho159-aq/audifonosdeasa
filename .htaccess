@@ -1,0 +1,27 @@
+# Grupo DEASA Widex — configuración básica para Apache
+
+# --- Compresión ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+# --- Caché de estáticos ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType text/html               "access plus 1 hour"
+</IfModule>
+
+# --- URLs sin .html (opcional) ---
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteCond %{REQUEST_URI} !\.html$
+  RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+ErrorDocument 404 /index.html

@@ -1,0 +1,10 @@
+# Biblioteca original de WordPress (431 MB). No forma parte del sitio:
+# las imágenes que se usan ya están copiadas en assets/img/
+media/
+
+# Configuración local del editor
+.claude/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
